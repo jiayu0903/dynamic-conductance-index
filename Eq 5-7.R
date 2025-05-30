@@ -1,5 +1,5 @@
 # Defining parameters
-G <-3.379650238
+DynG <-3.379650238
 
 
 
@@ -16,7 +16,7 @@ g_bw <- 0.5081374*1
 
 
 
-g_Tw <- 1/((G/Ig)+(1/g_bw)) 
+g_Tw <- 1/((DynG/Ig)+(1/g_bw)) 
 
 # Example values, which you can replace with actual values
 K <- 1
@@ -28,5 +28,5 @@ g_sw <- 2 / ((1/g_Tw - 1/g_bw) + sqrt((1/g_Tw - 1/g_bw)^2 + (4 * K / (K + 1)^2) 
 # Print results
 print(g_sw)
 
-g_sw2 <- (2*Ig*g_bw)/(Ig+2*G*g_bw)
+g_sw2 <- (2*Ig*g_bw)/(Ig+2*DynG*g_bw)
 g_sw2
