@@ -1,4 +1,4 @@
-# 定义参数
+# Defining parameters
 G <-3.379650238
 
 
@@ -18,14 +18,14 @@ g_bw <- 0.5081374*1
 
 g_Tw <- 1/((G/Ig)+(1/g_bw)) 
 
-
+# Example values, which you can replace with actual values
 K <- 1
-# 示例值，你可以替换为实际值
 
-# 计算公式
+
+# Formula
 g_sw <- 2 / ((1/g_Tw - 1/g_bw) + sqrt((1/g_Tw - 1/g_bw)^2 + (4 * K / (K + 1)^2) * (2 * 1/g_Tw - 1/g_bw) * 1/g_bw))
 
-# 打印结果
+# Print results
 print(g_sw)
 
 g_sw2 <- (2*Ig*g_bw)/(Ig+2*G*g_bw)
